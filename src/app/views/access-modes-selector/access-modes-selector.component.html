@@ -1,0 +1,14 @@
+<mat-button-toggle-group value="none" (change)="modeSelected($event.value)">
+    <mat-button-toggle value="none">
+        <mat-icon>block</mat-icon>
+    </mat-button-toggle>
+    <mat-button-toggle value="view">
+        <mat-icon>preview</mat-icon>
+    </mat-button-toggle>
+    <mat-button-toggle value="edit">
+        <mat-icon>edit_square</mat-icon>
+    </mat-button-toggle>
+    <mat-button-toggle ngIf="extras.includes('add')" value="add">
+        <mat-icon>add_box</mat-icon>
+    </mat-button-toggle>
+</mat-button-toggle-group>      

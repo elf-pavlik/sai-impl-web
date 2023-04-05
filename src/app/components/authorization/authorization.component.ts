@@ -165,6 +165,7 @@ export class AuthorizationComponent implements OnInit {
   }
 
   childChanged(shapeTree: string, value: string) {
+    console.log(shapeTree, value)
     const child = this.shareData.children.find(c => c.shapeTree === shapeTree)
     if (child) {
       child.accessMode = this.chooseAccessMode(value) 

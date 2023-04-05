@@ -39,6 +39,7 @@ import {ApplicationsComponent} from './components/applications/applications.comp
 import {DataComponent} from './components/data/data.component';
 import {LanguageComponent} from './views/language/language.component';
 import {AppViewComponent} from './views/app-view/app-view.component';
+import {AccessModesSelectorComponent} from './views/access-modes-selector/access-modes-selector.component'
 import {MatChipsModule} from "@angular/material/chips";
 import {AccessNeedViewComponent} from './views/access-need-view/access-need-view.component';
 import {MatSlideToggleModule} from "@angular/material/slide-toggle";
@@ -65,6 +66,7 @@ import {I18nModule} from "./i18n.module";
     DataComponent,
     LanguageComponent,
     AppViewComponent,
+    AccessModesSelectorComponent,
     AccessNeedViewComponent,
     AddSocialAgentFormComponent,
   ],

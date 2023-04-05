@@ -54,20 +54,7 @@
       <mat-list>
         <mat-list-item *ngFor="let child of resource.children">
           {{child.shapeTree.label}} ({{ child.count }})
-          <mat-button-toggle-group value="none" (change)="childChanged(child.shapeTree.id, $event.value)">
-            <mat-button-toggle value="none">
-              <mat-icon>block</mat-icon>
-            </mat-button-toggle>
-            <mat-button-toggle value="view">
-              <mat-icon>preview</mat-icon>
-            </mat-button-toggle>
-            <mat-button-toggle value="edit">
-              <mat-icon>edit_square</mat-icon>
-            </mat-button-toggle>
-              <mat-button-toggle value="add">
-                <mat-icon>add_box</mat-icon>
-              </mat-button-toggle>
-          </mat-button-toggle-group>      
+          <sai-access-modes-selector [extras]="['add']" (change)="childChanged(child.shapeTree.id, $event.mode)"></sai-access-modes-selector>
         </mat-list-item>
       </mat-list>
     </mat-card-content>
